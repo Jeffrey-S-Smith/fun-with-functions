@@ -36,6 +36,7 @@ function multiply(a, b) { //eslint-disable-line
   return arr;
 }
 
+
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
 
@@ -58,6 +59,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let sum2 = sum (a ,b )[0] ;
   let sum3 =  sum (sum2 , c )[0] ;
 
+
   let product2 = multiply(a, b)[0] ;
   let product3 = multiply (product2 , c)[0] ;
 
@@ -71,9 +73,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   return arr3;
 
-
 }
-
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
