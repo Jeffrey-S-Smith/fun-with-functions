@@ -54,9 +54,11 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   let sum2 = sum (a ,b )[0] ;
   let sum3 =  sum (sum2 , c )[0] ;
+
 
   let product2 = multiply(a, b)[0] ;
   let product3 = multiply (product2 , c)[0] ;
@@ -71,8 +73,8 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   return arr3;
 
-  return arr;
 }
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
@@ -92,12 +94,21 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  let sum1 = sum (testArray[0] , testArray[1] )[0] ;
+  let sum2 = sum (sum1 , testArray[2] )[0] ;
 
+
+  let str =  testArray + ' was passed in as an array of numbers, and ' + sum2 + ' is their sum.' ;
+
+  let arr=[] ;
+  arr[0] = sum2 ;
+  arr[1] = str ;
+  return arr;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
